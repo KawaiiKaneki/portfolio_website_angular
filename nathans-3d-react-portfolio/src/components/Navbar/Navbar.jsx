@@ -14,16 +14,16 @@ const Navbar = () => {
             if(window.scrollY === 0){
                 setIsTop(true)
             }
-            if(window.scrollY !==0){
-                setIsTop(false)
+            if(window.scrollY !==0) { 
+                setIsTop(false) 
             }
+        }
             window.addEventListener("scroll", handleScroll)
             return () => window.removeEventListener("scroll", handleScroll)
-        }
     }, [])
   return (
     <section>
-        <div className={`${isTop ? "": "bg-[#201934]"} md:px-16 sm:px-8 w-full fixed top-0 pt-5 pb-5 transition duration-300`}>
+        <div className={`${isTop ? "": "bg-[#201934]"} md:px-16 sm:px-8 w-full z-40 fixed top-0 pt-5 pb-5 transition duration-300`}>
             <nav className='flex items-center justify-between'>
                 <a href='/' className='w-28'>
                     <img src='/images/logo.png'/>
