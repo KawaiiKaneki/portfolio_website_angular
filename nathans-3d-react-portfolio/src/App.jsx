@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import { Suspense } from 'react'
 import {Loader} from '@react-three/drei'
+import Projects from './components/Projects/project'
 
 function App() {
   
@@ -18,6 +19,9 @@ function App() {
         </Suspense>
         <About/>
         <Loader/>
+        <Suspense fallback={null}>
+          <Projects />
+        </Suspense>
       </BrowserRouter>
     </>
   )
