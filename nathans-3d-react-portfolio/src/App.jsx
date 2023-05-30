@@ -6,6 +6,7 @@ import About from './components/About/About'
 import {Loader} from '@react-three/drei'
 import Project from './components/Projects/project'
 import ProjectMobile from './components/Projects/ProjectMobile'
+import Technologies from './components/Technologies/Technologies';
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
@@ -37,6 +38,7 @@ function App() {
       ):(
           <ProjectMobile/>
       )}
+      <Technologies/>
       </BrowserRouter>
   )
 }
