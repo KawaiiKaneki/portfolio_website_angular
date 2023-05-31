@@ -8,6 +8,7 @@ import Project from './components/Projects/project'
 import ProjectMobile from './components/Projects/ProjectMobile'
 import Technologies from './components/Technologies/Technologies';
 import Poster from './components/Poster';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
@@ -41,6 +42,7 @@ function App() {
       )}
       <Technologies/>
       <Poster/>
+      <Testimonials/>
       </BrowserRouter>
   )
 }
