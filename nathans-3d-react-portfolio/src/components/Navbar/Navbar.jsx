@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div className={`lg:block absolute right-10 lg:relative lg:top-0 transition-all duration-100 ease-in ${isOpen ? "top-[50px]": "top-[-100px]"}`}>
                     <ul className={`flex text-gray-300 ${isOpen ? "flex-col space-y-5": "flex-row space-x-6"}`}>
                         <li className='hover:text-[#ec008c] transition-all duration-200 ease-in cursor-pointer'><a href='#about'>About</a></li>
-                        <li className='hover:text-[#ec008c] transition-all duration-200 ease-in cursor-pointer'><a href='#projects'>Projects</a></li>
+                        <li className='hover:text-[#ec008c] transition-all duration-200 ease-in cursor-pointer'><a href='#project'>Projects</a></li>
                         <li className='hover:text-[#ec008c] transition-all duration-200 ease-in cursor-pointer'><a href='#technologies'>Technologies</a></li>
                         <li className='hover:text-[#ec008c] transition-all duration-200 ease-in cursor-pointer'><a href='#testimonials'>Testimonials</a></li>
                         <li className='hover:text-[#ec008c] transition-all duration-200 ease-in cursor-pointer'><a href='#contact'>Contact Me</a></li>
